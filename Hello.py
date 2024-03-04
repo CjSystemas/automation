@@ -56,12 +56,9 @@ def run():
     #df = df.set_index()
     #st.bar_chart(df)
     # Create a drop-down menu
-    fig = px.pie(
-    hole = 0.2,
-    labels = df.values(),
-    names = df.keys(),
-    )
-    st.plotly_chart(fig)
+    df1 = pd.DataFrame(df)
+    df1
+    st.line_chart(df=df1)
 
 
    
