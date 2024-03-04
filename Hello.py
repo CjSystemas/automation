@@ -53,8 +53,6 @@ def run():
     #st.markdown(df.style.hide(axis="index").to_html(), unsafe_allow_html=True)
     #st.dataframe(df, hide_index=False)
     # Plot histogram
-    fig, ax = plt.subplots()
-    ax.hist(df[feature], bins=20)
     # Display the plot
     st.pyplot(df)
     
