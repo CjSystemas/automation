@@ -56,10 +56,14 @@ def run():
     #df = df.set_index()
     #st.bar_chart(df)
     # Create a drop-down menu
+    fig = px.pie(
+    hole = 0.2,
+    labels = df.values(),
+    names = df.keys(),
+    )
+   st.header("Donut chart")
+   st.plotly_chart(fig)
 
-    df_grouped = df[mask].groupby(by='satisfaction').count()[['Salvador']]
-    df_grouped = df_grouped.rename(columns={'Meses': 'Curitiba'})
-    df_grouped = df_grouped.reset_index()
 
    
 
