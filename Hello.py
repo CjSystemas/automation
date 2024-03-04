@@ -56,7 +56,7 @@ def run():
     #df = df.set_index()
     #st.bar_chart(df)
     # Create a drop-down menu
-column_name = st.selectbox('Select a column to visualize:', df.columns)
+column_name = st.selectbox('Select a column to visualize:', df.Meses)
 
 # Select the data for the chart
 x = df[Meses]
