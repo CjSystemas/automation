@@ -43,7 +43,7 @@ def run():
 
     st.title("Preço da Cesta Básica por Cidades")
     #https://drlee.io/building-streamlit-data-web-apps-with-pandas-there-to-tell-the-story-afe03ab71c57
-    df = pd.read_excel('gasto_cesta_basica_8_meses.xlsx')
+    df = pd.read_excel('gasto_cesta_basica_8_meses.xlsx', columns=['Meses', 'Curitiba', 'Salvador'], index=[1, 2, 3])
     st.dataframe(df)
     #st.write(df['Curitiba'].describe())
     #df_aux = df.describe(include='all')
@@ -60,8 +60,8 @@ def run():
     # plotting the line chart
     # Loading the iris dataset
     #https://www.comet.com/site/blog/streamlit-app-for-data-science-projects/
-    st.bar_chart(df['Meses'])
-    st.area_chart(df['Salvador'])
+    #st.bar_chart(df['Meses'])
+    #st.area_chart(df['Salvador'])
    
 
 if __name__ == "__main__":
