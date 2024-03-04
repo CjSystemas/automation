@@ -47,7 +47,8 @@ def run():
     #st.write(df_aux)
     df = df.describe(include='all').fillna("").astype("str")
     st.write(df)
-  
+    st.dataframe(df.style.hide(axis="index"))
+    st.markdown(df.style.hide(axis="index").to_html(), unsafe_allow_html=True)
    
 
 if __name__ == "__main__":
