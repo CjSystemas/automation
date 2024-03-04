@@ -49,7 +49,7 @@ def run():
     st.write(df)
     #st.dataframe(df.style.hide(axis="index"))
     #st.markdown(df.style.hide(axis="index").to_html(), unsafe_allow_html=True)
-    st.dataframe(df, hide_index=True)
+    st.dataframe(df, hide_index=False)
    
 
 if __name__ == "__main__":
