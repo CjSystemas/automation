@@ -39,7 +39,7 @@ def run():
     )
 
     st.title("Preço da Sexta Básica por Cidades")
-    df = pd.read_excel('gasto_cesta_basica_8_meses.xlsx', index=False)
+    df = pd.read_excel('gasto_cesta_basica_8_meses.xlsx')
     st.write(df)
   
   
