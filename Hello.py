@@ -18,6 +18,7 @@ import numpy as np
 from sklearn import datasets
 import matplotlib.pyplot as plt
 from streamlit.logger import get_logger
+import plotly.express as px
 
 LOGGER = get_logger(__name__)
 
@@ -56,7 +57,11 @@ def run():
     #df = df.set_index()
     #st.bar_chart(df)
     # Create a drop-down menu
-    st.area_chart(df)
+    # plotting the line chart
+    fig = px.line(df, y="Salvador",)
+ 
+    # showing the plot
+    fig.show()
 
 
    
