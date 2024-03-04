@@ -24,6 +24,6 @@ def animation_demo() -> None:
 
 
 
-animation_demo()
+
 
 show_code(animation_demo)
