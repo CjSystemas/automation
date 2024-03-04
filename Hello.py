@@ -58,7 +58,7 @@ def run():
     #st.bar_chart(df)
     # Create a drop-down menu
     # plotting the line chart
-    fig = px.line(df, y="Salvador",)
+    fig = px.line(df, y="Meses",)
  
     # showing the plot
     fig.show()
