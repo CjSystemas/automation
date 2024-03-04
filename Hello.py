@@ -60,7 +60,7 @@ def run():
     # plotting the line chart
     # Loading the iris dataset
     #https://www.comet.com/site/blog/streamlit-app-for-data-science-projects/
-    st.bar_chart(df['Salvador'])
+    st.bar_chart(df['Meses'])
    
 
 if __name__ == "__main__":
