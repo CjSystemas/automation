@@ -40,8 +40,7 @@ def run():
 
     st.title("Preço da Sexta Básica por Cidades")
     df = pd.read_excel('gasto_cesta_basica_8_meses.xlsx')
-    st.write(df)
-    st.slider('Curitiba', min_value=0, max_value=100)  # Returns the value selected by the user
+    st.dataframe(df)
   
    
 
