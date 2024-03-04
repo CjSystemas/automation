@@ -27,7 +27,7 @@ def run():
         page_icon="chart_with_upwards_trend",
     )
 
-    st.write("# CJ SYSTEMAS! 👋")
+    st.write("### CJ SYSTEMAS! 👋")
 
   
 
