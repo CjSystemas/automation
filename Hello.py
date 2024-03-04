@@ -61,8 +61,7 @@ def run():
     labels = df.values(),
     names = df.keys(),
     )
-   st.header("Donut chart")
-   st.plotly_chart(fig)
+    st.plotly_chart(fig)
 
 
    
