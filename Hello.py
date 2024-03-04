@@ -53,8 +53,7 @@ def run():
     #st.markdown(df.style.hide(axis="index").to_html(), unsafe_allow_html=True)
     #st.dataframe(df, hide_index=False)
     # Plot histogram
-    # Display the plot
-    st.pyplot(df)
+ 
     
    
 
