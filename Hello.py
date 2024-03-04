@@ -56,9 +56,7 @@ def run():
     #df = df.set_index()
     #st.bar_chart(df)
     # Create a drop-down menu
-    df1 = pd.DataFrame(df)
-    df1
-    st.line_chart(df=df1)
+    st.area_chart(df)
 
 
    
