@@ -55,14 +55,8 @@ def run():
     # Plot histogram
     fig, ax = plt.subplots()
     ax.hist(df[feature], bins=20)
-
-    # Set the title and labels
-    ax.set_title(f'Histogram of {feature}')
-    ax.set_xlabel(feature)
-    ax.set_ylabel('Frequency')
-
     # Display the plot
-    st.pyplot(fig)
+    st.pyplot(df)
     
    
 
