@@ -15,6 +15,8 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
+from sklearn import datasets
+import matplotlib.pyplot as plt
 from streamlit.logger import get_logger
 
 LOGGER = get_logger(__name__)
@@ -50,6 +52,17 @@ def run():
     #st.dataframe(df.style.hide(axis="index"))
     #st.markdown(df.style.hide(axis="index").to_html(), unsafe_allow_html=True)
     #st.dataframe(df, hide_index=False)
+    # Plot histogram
+    fig, ax = plt.subplots()
+    ax.hist(df[feature], bins=20)
+
+    # Set the title and labels
+    ax.set_title(f'Histogram of {feature}')
+    ax.set_xlabel(feature)
+    ax.set_ylabel('Frequency')
+
+    # Display the plot
+    st.pyplot(fig)
     
    
 
