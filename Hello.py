@@ -57,6 +57,10 @@ def run():
     #st.bar_chart(df)
     # Create a drop-down menu
 
+    df_grouped = df[mask].groupby(by='satisfaction').count()[['Meses']]
+    df_grouped = df_grouped.rename(columns={'Meses': 'Curitiba'})
+    df_grouped = df_grouped.reset_index()
+
    
 
 if __name__ == "__main__":
