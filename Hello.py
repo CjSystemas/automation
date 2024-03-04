@@ -50,8 +50,7 @@ def run():
     #st.dataframe(df.style.hide(axis="index"))
     #st.markdown(df.style.hide(axis="index").to_html(), unsafe_allow_html=True)
     #st.dataframe(df, hide_index=False)
-    fig, ax = plt.subplots()
-    ax.hist(df[feature], bins=20)
+    
    
 
 if __name__ == "__main__":
