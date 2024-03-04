@@ -59,7 +59,8 @@ def run():
     # Create a drop-down menu
     # plotting the line chart
     # Loading the iris dataset
-    st.line_chart(df['Salvador'])
+    #https://www.comet.com/site/blog/streamlit-app-for-data-science-projects/
+    st.line_chart(df['Salvador'],['Salvador'])
    
 
 if __name__ == "__main__":
