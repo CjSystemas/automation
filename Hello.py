@@ -45,6 +45,8 @@ def run():
     st.write(df['Curitiba'].describe())
     df_aux = df.describe(include='all')
     st.write(df_aux)
+    df = df.describe(include='all').fillna("").astype("str")
+    st.write(df)
   
    
 
