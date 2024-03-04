@@ -43,7 +43,7 @@ def run():
     st.title("Preço da Cesta Básica por Cidades")
     #https://drlee.io/building-streamlit-data-web-apps-with-pandas-there-to-tell-the-story-afe03ab71c57
     df = pd.read_excel('gasto_cesta_basica_8_meses.xlsx')
-    #st.dataframe(df)
+    st.dataframe(df)
     #st.write(df['Curitiba'].describe())
     #df_aux = df.describe(include='all')
     #st.write(df_aux)
