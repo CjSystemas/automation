@@ -59,11 +59,7 @@ def run():
     # Create a drop-down menu
     # plotting the line chart
     # Loading the iris dataset
-    df = px.data.tips()
- 
-    fig = px.pie(df, values="Meses", names="Salvador")
-    fig.show()
-
+    st.line_chart(df['Salvador'])
    
 
 if __name__ == "__main__":
