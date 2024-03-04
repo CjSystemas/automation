@@ -53,9 +53,16 @@ def run():
     #st.markdown(df.style.hide(axis="index").to_html(), unsafe_allow_html=True)
     #st.dataframe(df, hide_index=False)
     # Plot histogram
-    df = df.set_index()
-    st.bar_chart(df)
-    
+    #df = df.set_index()
+    #st.bar_chart(df)
+    # Create a drop-down menu
+column_name = st.selectbox('Select a column to visualize:', df.columns)
+
+# Select the data for the chart
+x = df[Meses]
+
+# Create the bar chart
+st.bar_chart(x)
    
 
 if __name__ == "__main__":
